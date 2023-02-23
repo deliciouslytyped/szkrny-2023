@@ -18,31 +18,32 @@ class ProblemBase:
     has_check = False
 
     def check(self):
-        verdict, html, etree = self._check()
-        #if verdict:
-        #    print("Solution is good!")
-        #else:
-        #    print("Solution is bad!")
-        #print(html)
-        print(etree.xpath('//p')[1].text_content())  # TODO
-        return verdict
+        if self.has_check:
+            verdict, html, etree = self._check()
+            #if verdict:
+            #    print("Solution is good!")
+            #else:
+            #    print("Solution is bad!")
+            #print(html)
+            print(etree.xpath('//p')[1].text_content())  # TODO
+            return verdict
 
     def _check(self):
-        if self.has_check:
-            problemid = self.getID()
-            result = self.run()
-            resp = requests.post(f"{self.check_url}{problemid}", data={"solution":f"{result}"})
-            assert(resp.status_code == 200)
-            etree = parse(BytesIO(resp.content))
-            clean_tree(etree)
-            html = tostring(etree, encoding="unicode")
-            if html.find("good.png") != -1:  # TODO meh
-                verdict = True
-            elif html.find("bad.png") != -1:
-                verdict = False
-            else:
-                raise AssertionError
-            return (verdict, html, etree)
+        problemid = self.getID()
+        result = self.run()
+        assert(result)
+        resp = requests.post(f"{self.check_url}{problemid}", data={"solution":f"{result}"})
+        assert(resp.status_code == 200)
+        etree = parse(BytesIO(resp.content))
+        clean_tree(etree)
+        html = tostring(etree, encoding="unicode")
+        if html.find("good.png") != -1:  # TODO meh
+            verdict = True
+        elif html.find("bad.png") != -1:
+            verdict = False
+        else:
+            raise AssertionError
+        return (verdict, html, etree)
 
     def getID(self):
         s = inspect.stack()

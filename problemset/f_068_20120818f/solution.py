@@ -5,7 +5,13 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def closedFormSumOfSquares(self, n):
+        return n * (n + 1) * (2 * n + 1) // 6  # TODO safe integer division??
+
+    def run(self):
+        sumofhundred = 5050  # as we know by Gauss
+        return sumofhundred**2 - self.closedFormSumOfSquares(100)
 
 if __name__ == "__main__":
     p = Problem()
