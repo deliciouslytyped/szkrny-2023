@@ -1,0 +1,182 @@
+# https://arato.inf.unideb.hu/szathmary.laszlo/pmwiki/index.php?n=Py.Feladatok2023febr
+# retrieved 2023.02.23 02:20
+
+# Python alapok
+20121001a Sztring metódus [f1]
+20120815b Sztringek #1 [f2]
+20120815c Sztringek #2 [f2]
+20141005b haladó sztringformázás [f2]
+20120818bc Listák #1 [f3]
+20120922a Listák #2 [f3]
+20120818a Két pont közti távolság (tuple02.py) [f4]
+20120818d List comprehensions [f4]
+20130211b Diamond (ciklus) [f4]
+20120904a Duplikátumok eltávolítása (halmaz01) [f5]
+20120905a Dictionary #1 [f5]
+20121006d Fájlkezelés (megjegyzések eltávolítása) [f6]
+20141125a Osztályok #1 verem és sor megvalósítása
+20130325a Osztályok #2 (sor két veremmel) [f7]
+20140108a Osztályok #3 (racionális számok)
+20190406b Osztályok #4 (dinamikus tömb)
+20121110a Modulok [f8]
+20121006e Haladó rendezés
+20121120a Kivételek #1
+20121120b Kivételek #2
+20150402a Reguláris kifejezések
+20210805a bing.com háttérkép
+
+# Könnyed ujjgyakorlatok
+#   egypercesek
+20121001b Egész számok összege 1-től 100-ig [f3]
+20120815e Palindróm [f2]
+20120815j Egész szám megfordítása [f2]
+20120818j Számjegyek száma [f2]
+20120820a Tömb rendezett-e
+20130225a Sztring tisztítása [f3]
+20130902a Medián
+20130902c Mondat extra szóközök nélkül (*)
+20190914a Nagy számok rovatunkban: 42
+
+#
+20170702a Számkitalálós
+20120815a Két szám összege [f2]
+20120905b Lista elemeinek szorzata [f3]
+20120815d ASCII táblázat [f3]
+20120910a Hangrend [f4]
+20120815h a-z [f3]
+20130920a kis- és nagybetűk felcserélve [f10]
+20120818e Ezernél kisebb pozitív egész számok (PE #1) [f3]
+20120905c My shuffle (shuffled) [f8]
+20120920c Hány naposak vagyunk?
+20120920e Sortörés [f4]
+20121006a kis- és nagybetűs ábécé
+20121205a sztring karaktereinek az összekeverése
+20130211a anagramma [f6]
+20130218a csodálatos elme [f2]
+20130902b Hamming-távolság (*)
+20170522a felhőkarcolók
+20180312a zipper
+20190901a Fizz Buzz
+20200801a operátorok
+20210424a Az ABACABA sorozat
+
+#Ötpercesek
+20120910b Magánhangzók eltávolítása
+20120921a Ékezetek eltávolítása [f5]
+20120820b Decimális → bináris konverter [f3]
+20130218b bizonyos karakterek [f5]
+20130218c karakterszámláló [f6]
+20130411a A) random számok ismétlődés nélkül; B) random betűk (duplikátummal)
+20141019a kedvenc subreddit-ek megnyitása
+20200415a Naprendszer
+
+# Normál
+20130218d sztring inkrementálása
+20120815f Csinos szám
+20120815g PI vers [f6]
+20120815i Fibonacci számok
+20120815k Szökés Alcatrazból
+20120815l Rejtélyes üzenet [f3]
+20120816a 8 királynő [f5]
+20120818f Négyzetek összege, összeg négyzete (PE #6) [f4]
+20120818g Öt egymást követő számjegy legnagyobb szorzata (PE #8) [f6]
+20170517a Öt egymást követő számjegy legnagyobb összege
+20120818h 100 db 50-jegyű szám (PE #13) [f5][f6]
+20120818i Számjegyek összege (PE #16)
+20130902d Prím palindróm
+20130902e Zárójelek (*)
+20120820c Első ezer számjegy
+20120831a PI értékének közelítése
+20120904b Lista egy részének a megfordítása [f10]
+20120920d Számjegyek összegzése míg egy számjegy marad
+20121005b Python rádió
+20121030a Bullshit Generátor [f8]
+20130424a programozási nyelvek
+20140105a keresztnevek
+20140215b egyszerű progress indicator
+20140314a nyomtatandó oldalak
+20141126a palindróm két számrendszerben is (PE #36)
+20160613a Hatoslottó
+20170314a π értékének meghatározása random számokkal
+20171030a bűvös spirál
+20191012b Münchausen számok
+
+# Egységtesztek
+20221108a unit tesztek
+
+# Rekurzió
+20180217a lista elemeinek összege / szorzata
+20180217b xn
+
+# Vigyázat! Gondolkodós feladatok!
+20130305a XOR [f4]
+20130919a eltérő viselkedés szimbolikus linken keresztül (xpost from /e/OpSys)
+20130919b a-z; megfordított forráskóddal: z-a (*)
+20140103a 2022
+20141005a valami_1 or valami_2 or … valami_N
+20221006a Halmaz megvalósítása szótárral (a "Duplikátumok eltávolítása (halmaz01)" c. feladat variációja)
+20221203a Normál kerekítés vs bankár kerekítés
+
+# Advent of Code
+20180306a README
+20180306b AoC2017, Day 1, Part 1 (Inverse Captcha)
+20180307a AoC2017, Day 2, Part 1 (Corruption Checksum)
+20180307b AoC2017, Day 4, Part 1 (High-Entropy Passphrases)
+20180307c AoC2017, Day 5, Part 1 (Maze Runner)
+20180307d AoC2017, Day 6, Part 1 (Memory Reallocation)
+20180307e AoC2017, Day 7, Part 1 (Processes)
+20180307f AoC2017, Day 8, Part 1 (I Heard You Like Registers)
+20180308a AoC2017, Day 12, Part 1 (Digital Plumber)
+
+# Operációs rendszerek
+20130414a password generátor
+20130326a utolsó N sor [f10]
+20130321a mp3-ak összeválogatása
+20121006b mass download
+20120920a JPG file-ok átnevezése
+20121107a felirat átnevezése
+20121125a my which
+20121125b PTI-s hallgatók
+20190406a Egyedi azonosítók generálása
+20121204a két file összefésülése
+20121204b ábécésorrendben legnagyobb szó
+20121205b Országok, városok
+20121205c subprocess modul
+20130902f animált gif visszafelé is
+20130919a eltérő viselkedés szimbolikus linken keresztül
+20131002a file keresése egy könyvtárban rekurzívan
+20140215a Hány darab feladat szerepel itt?
+20151111a Azonos tartalmú file-ok keresése
+20220928a mappa tartalmának kilistázása
+20220928b my touch
+
+# Gráfok
+20130528a Gráfbejárások
+
+# Hack
+20121026a Dívány szavazatok testreszabása
+
+# Kihívás (challenge)
+20121005a Keresés a PI számjegyeiben
+20141029a trükkös tüntető + Apple + a legkeresettebb hacker
+20150525a 256 byte compo
+20170305a Üzenet az űrből
+20191012a a legnagyobb jobbról csonkolható prím
+20191014a a legnagyobb balról csonkolható prím
+
+# JSON
+20120920g Na de most akkor mi is az én IP címem?
+20121126a /r/EarthPorn
+20121126b Két program közti kommunikáció
+
+# Web Scraping
+20130905a Programozói kifogások
+
+# Emelt szintű érettségi feladatok
+20190405a Nézőtér
+
+# Mini projektek
+20120816b get_alap.py
+20221013a Digitális óra a parancssorban
+20221021a Végső visszaszámlálás
+20221107a Videó → PDF
