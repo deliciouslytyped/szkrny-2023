@@ -4,8 +4,24 @@
 
 from infra import ProblemBase
 
+from textwrap import dedent
+import string
+
 class Problem(ProblemBase):
-    pass
+    c = dedent("""
+        Cbcq Dgyk!
+        
+        Dmeybh kce cew yrwyg hmrylyaqmr:
+        rylsjb kce y Nwrfml npmepykmxyqg lwcjtcr!
+        
+        Aqmimjjyi:
+        
+        Ynyb
+        """)
+
+    def run(self):
+        rotate = 2
+        print(self.c.translate(str.maketrans(string.ascii_letters, string.ascii_letters[rotate:] + string.ascii_letters[:rotate])))
 
 if __name__ == "__main__":
     p = Problem()

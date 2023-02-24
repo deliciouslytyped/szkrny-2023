@@ -4,8 +4,15 @@
 
 from infra import ProblemBase
 
+import webbrowser
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        reddits = ["netsec", "sysadmin", "remath"]
+        url = "https://old.reddit.com/r/%s"
+        webbrowser.open_new(url % reddits[0])
+        for r in reddits[1:]:
+            webbrowser.open(url % r)
 
 if __name__ == "__main__":
     p = Problem()

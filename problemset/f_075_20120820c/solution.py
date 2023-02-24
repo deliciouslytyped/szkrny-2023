@@ -5,7 +5,12 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        #(9 * 1 + 90 * 2 + x * 3) = 1000
+        # x = 270
+        r = "".join([str(100+267), str(100+268), str(100+269), str(3)])
+        return r
 
 if __name__ == "__main__":
     p = Problem()

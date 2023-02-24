@@ -27,6 +27,8 @@ class ProblemBase:
             #print(html)
             print(etree.xpath('//p')[1].text_content())  # TODO
             return verdict
+        else:
+            return self.run()
 
     def _check(self):
         problemid = self.getID()

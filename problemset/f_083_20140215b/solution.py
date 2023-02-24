@@ -4,8 +4,15 @@
 
 from infra import ProblemBase
 
+import time
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        print("Downloading images...", end="")
+        l = ["|", "/", "-", "\\"]
+        for i in range(0, 20):
+            time.sleep(0.3)
+            print("\x08" + l[i % len(l)], end="")
 
 if __name__ == "__main__":
     p = Problem()

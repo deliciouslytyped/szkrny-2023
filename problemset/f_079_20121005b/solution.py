@@ -5,7 +5,15 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def check(self):
+        # TODO
+        self.run()
+        self.simulateInput()
+
+    def run(self):
+        self.printBanner()
+        self.printStations()
+        self.waitInput()
 
 if __name__ == "__main__":
     p = Problem()
