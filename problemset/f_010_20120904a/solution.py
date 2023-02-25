@@ -5,7 +5,12 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def check(self):
+        l = [5, 2, 3, 5, 1, 4, -200, 5, 1, 3, 2, 2, 5]
+        assert(self.run(l) == [-200, 1, 2, 3, 4, 5])
+
+    def run(self, l):
+        return list(sorted(set(l)))
 
 if __name__ == "__main__":
     p = Problem()

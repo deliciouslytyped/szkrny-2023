@@ -13,7 +13,7 @@ class Problem(ProblemBase):
         r = []
         while not len(set(r)) < len(r):
             r = random.choices(string.ascii_lowercase, k=6)
-        print("[" + ", ".join(r) + "]")
+        print("[" + ", ".join(r) + "] ")
 
 if __name__ == "__main__":
     p = Problem()

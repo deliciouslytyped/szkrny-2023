@@ -5,7 +5,9 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        return sum(x for x in range(1000) if not x % 5 or not x % 3)
 
 if __name__ == "__main__":
     p = Problem()

@@ -4,8 +4,11 @@
 
 from infra import ProblemBase
 
+from datetime import date
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        date.today() - date(1980,1,1)
 
 if __name__ == "__main__":
     p = Problem()

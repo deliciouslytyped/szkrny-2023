@@ -4,8 +4,13 @@
 
 from infra import ProblemBase
 
+from pathlib import Path
+
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        with open(Path(__file__).parent / "data.txt", "r") as f:
+            return str(sum(int(x) for x in f.readlines()))[:10]
 
 if __name__ == "__main__":
     p = Problem()

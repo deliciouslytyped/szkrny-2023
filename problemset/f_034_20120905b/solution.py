@@ -4,8 +4,11 @@
 
 from infra import ProblemBase
 
+from math import prod
+
 class Problem(ProblemBase):
-    pass
+    def run(self, l):
+        return prod(l)
 
 if __name__ == "__main__":
     p = Problem()

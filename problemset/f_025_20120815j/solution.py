@@ -5,7 +5,12 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def check(self):
+        assert(self.run(1977) == 7791)
+        assert(self.run(12568) == 86521)
+
+    def run(self, x):
+        return int("".join(tuple(reversed(str(x)))))
 
 if __name__ == "__main__":
     p = Problem()

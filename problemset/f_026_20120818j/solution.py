@@ -5,7 +5,9 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        return len(str(2**256))
 
 if __name__ == "__main__":
     p = Problem()

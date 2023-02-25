@@ -4,8 +4,13 @@
 
 from infra import ProblemBase
 
+import string
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        for i in string.ascii_lowercase:
+            print(i, end=" ")
+        print()
 
 if __name__ == "__main__":
     p = Problem()

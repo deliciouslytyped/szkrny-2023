@@ -4,8 +4,11 @@
 
 from infra import ProblemBase
 
+
+# TODO the single instance of multiple checked subproblems and I don't feel like updating the code to handle it right now
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        print(sum(sum([[int(y) for y in str(x)] for x in range(1, 100+1)], [])))
 
 if __name__ == "__main__":
     p = Problem()

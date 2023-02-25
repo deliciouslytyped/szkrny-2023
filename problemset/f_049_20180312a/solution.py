@@ -5,7 +5,12 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        chars = "abcdefghijklmnopqrstuvwxyz"
+        codes = list(range(ord('a'), ord('z')+1))
+
+        for t in zip(chars, codes):
+            print(t)
 
 if __name__ == "__main__":
     p = Problem()

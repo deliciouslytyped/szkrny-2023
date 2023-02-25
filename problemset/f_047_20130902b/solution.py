@@ -5,7 +5,13 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def check(self):
+        assert(self.run("toned", "roses") == 3)
+
+    def run(self, a, b):
+        if len(a) != len(b):
+            raise ValueError
+        return sum(x != y for x, y in zip(a, b))
 
 if __name__ == "__main__":
     p = Problem()
