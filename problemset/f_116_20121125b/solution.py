@@ -4,8 +4,12 @@
 
 from infra import ProblemBase
 
+import csv
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        print(", ".join(sorted(keresztnev.capitalize() for keresztnev, _, szak in csv.reader(open("nevek.csv", "r")) if szak.lower() == "pti")))
+
 
 if __name__ == "__main__":
     p = Problem()

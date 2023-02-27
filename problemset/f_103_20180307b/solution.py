@@ -5,7 +5,11 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        with open("input.txt", "r") as f:
+            s = f.readlines()
+            return sum(1 for x in s if not len(set(x.split())) < len(x.split()))
 
 if __name__ == "__main__":
     p = Problem()

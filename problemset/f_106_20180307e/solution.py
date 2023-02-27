@@ -5,7 +5,13 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    has_check = True
+    def run(self):
+        with open("input.txt", "r") as f:
+            s = [[y.split()[0] if len(y.split()) > 1 and y.split()[1].startswith("(") else y.split(", ") for y in x.strip().split(" -> ")] for x in f.readlines()]
+            l = set(x[0] for x in s)
+            r = set(sum((x[1] for x in s if len(x) > 1), []))
+            return list(l - r)[0]
 
 if __name__ == "__main__":
     p = Problem()

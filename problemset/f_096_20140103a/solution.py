@@ -5,7 +5,9 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        f = lambda x: str(ord(x))
+        print(f('')+f(''))
 
 if __name__ == "__main__":
     p = Problem()

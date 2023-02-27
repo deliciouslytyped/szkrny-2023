@@ -1,3 +1,5 @@
+# TODO this is a duplicate
+
 
 # 20130919a eltérő viselkedés szimbolikus linken keresztül (xpost from /e/OpSys)
 # https://arato.inf.unideb.hu/szathmary.laszlo/pmwiki/index.php?n=Py3.20130919a

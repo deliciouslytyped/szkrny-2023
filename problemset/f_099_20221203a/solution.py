@@ -5,7 +5,8 @@
 from infra import ProblemBase
 
 class Problem(ProblemBase):
-    pass
+    def normal_rounding(number: float) -> int:
+        pass
 
 if __name__ == "__main__":
     p = Problem()

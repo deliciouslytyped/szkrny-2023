@@ -4,8 +4,15 @@
 
 from infra import ProblemBase
 
+import requests, json
+
+
 class Problem(ProblemBase):
-    pass
+    def run(self):
+        content = requests.get("https://jsonip.com/").content
+        assert(content)
+        v = json.loads(content)
+        print(v["ip"])
 
 if __name__ == "__main__":
     p = Problem()

@@ -4,8 +4,15 @@
 
 from infra import ProblemBase
 
+from secrets import choice
+import string
+
 class Problem(ProblemBase):
-    pass
+    def check(self):
+        print(self.run())
+
+    def run(self, n=8):
+        return "".join(choice(string.ascii_letters + string.digits) for _ in range(n))
 
 if __name__ == "__main__":
     p = Problem()
