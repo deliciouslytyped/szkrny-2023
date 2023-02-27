@@ -61,12 +61,11 @@ class Clock:
             self.last_render_size = len(rendered)
             print(rendered)
 
-
     def loop(self, fmtspec="hms"):
         while True:
             sleep(0.2)  # TODO
-            c.on_update()
-            c.render(fmtspec=fmtspec)
+            self.on_update()
+            self.render(fmtspec=fmtspec)
 
 def curses_wrapper(f):
     def ff(a):
